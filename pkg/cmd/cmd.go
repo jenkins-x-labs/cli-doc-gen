@@ -26,8 +26,8 @@ type Options struct {
 func NewCmd() (*cobra.Command, *Options) {
 	o := &Options{}
 	cmd := &cobra.Command{
-		Use:   "tp",
-		Short: "a tool to trigger pipelines in a Jenkins server",
+		Use:   "cli-doc-gen",
+		Short: "a tool to generate website documentation files from shell scripts or other source code",
 		Run: func(cmd *cobra.Command, args []string) {
 			common.SetLoggingLevel(cmd)
 			err := o.Run()
